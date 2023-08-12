@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/railway.css">
+        <link rel="icon" href="rail.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Register Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+    </head>
+<body >
+
+    <div >
+        <div class="container-fluid  regg">
+            <div class=" reggy">
+                <form class="form-horizontal" action="#">
+                    <h2>Registration</h2>
+                    
+                    <div class="form-group">
+                        <label class="control-label" for="uname">User Name</label>
+                        <input class="form-control" type="text" id="uname" pattern="[0-9]{10}">
+                        <div id="unamehelp" class="form-text" ;></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" id="moblab" for="mobile">Mobile Number</label>
+                    </div>
+                    <div>
+                        <div class="select-box">
+                            <div class="selected-box">
+                                <div id="mainmob">
+                                    <div  id="maincountry" onclick="showoptions()">
+                                        <div id="mainflag">
+                                            <span class="iconify"  data-icon="flag:in-4x3"></span>
+                                            <strong >+91</strong>
+                                        </div>
+                                        
+                                        <div id="fla2">
+                                            <span class="iconify" data-icon="flag:gb-4x3"></span>
+                                            <strong>+44</strong>
+                                            
+                                        </div>
+                                        <div id="flag3">
+                                            <span class="iconify" data-icon="flag:au-4x3"></span>
+                                            <strong>+61</strong>
+                                        </div>
+                                        
+                                        <div id="fla4">
+                                            <span class="iconify" data-icon="flag:jp-4x3"></span>
+                                            <strong>+81</strong>
+                                        </div>
+
+                                        <div id="flag5">
+                                            <span class="iconify" data-icon="flag:my-4x3"></span>
+                                            <strong>+60</strong>
+                                        </div > 
+                                        <div id="flag6">
+                                            <span class="iconify" data-icon="flag:nz-4x3"></span>
+                                            <strong>+64</strong>
+                                        </div> 
+                                    </div>     
+                                    <div id="telno">
+                                        <input type="tel" class="form-control" maxlength="10" name="tel"  placeholder="number">
+                                    </div>
+                                    
+                                </div>
+                                <div class="options" id="options" >
+                                    
+                                    <ol>
+                                        <li class="option" id="option1" onclick="selectOption1()">
+                                            <div><span class="country-name">India</span></div>
+                                            <div>
+                                                <span class="iconify"  data-icon="flag:in-4x3"></span>
+                                                <strong>+91</strong>
+                                                
+                                            </div>
+                                             
+                                            
+                                        </li>
+                                        <li class="option" onclick="selectOption2()">
+                                           
+                                            <div><span class="country-name">UK</span></div>
+                                            <div>
+                                                <span class="iconify" data-icon="flag:gb-4x3"></span>
+                                                <strong>+44</strong>
+                                                
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="option" onclick="selectOption3()">
+                                            <div><span class="country-name">AUS</span></div>
+                                            <div>
+                                                <span class="iconify" data-icon="flag:au-4x3"></span>
+                                                <strong>+61</strong>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="option" onclick="selectOption4()">
+                                            <div><span class="country-name">JP</span></div>
+                                            <div>
+                                                <span class="iconify" data-icon="flag:jp-4x3"></span>
+                                                <strong>+81</strong>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="option" onclick="selectOption5()">
+                                            <div><span class="country-name">MY</span></div>
+                                            <div>
+                                                <span class="iconify" data-icon="flag:my-4x3"></span>
+                                                <strong>+60</strong>
+                                            </div>
+                                        </li>
+                                        <li class="option" onclick="selectOption6()">
+                                            <div><span class="country-name">NZ</span></div>
+                                            <div>
+                                                <span class="iconify" data-icon="flag:nz-4x3"></span>
+                                                <strong>+64</strong>
+                                            </div>
+                                        </li>
+                                        
+                                    </ol>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div id="unamehelp" class="form-text" ;></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" type="Email" id="email">
+                        <div id="emailhelp" class="form-text" ;></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lname">Password</label>
+                        <input class="form-control" id="pass" type="password">
+                        <div id="passhelp" class="form-text" ;></div>
+                    
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lname">Confirm Password</label>
+                        <input class="form-control" id="cpass" type="password">
+                        <div id="ccpasshelp" class="form-text" ;></div>
+                    </div>
+                    
+                    
+                    <div id="personaldetails" onclick="opendetail()">
+                        <div>
+                            <button><h4>personal details</h4></button>
+                        </div>
+                        <div><h6>click here</h6></div>
+                    </div>
+                      
+                      <div id="registerbtn">
+                          
+                        <input type="submit" value="Register">
+                      </div>
+
+
+                     
+                </form>
+                
+                
+            </div>
+        </div>
+    </div>
+    <form action="">
+        <div>
+            <div id="registerhide">
+                <table>
+                    <h5 style="text-align: center;">Personal Details</h5>
+                    <tr>
+                        <th><label for="fname">First Name</label></th>
+                        <td><input type="text" name="fame" id="fname"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="lname">Last Name</label></th>
+                        <td><input type="text" name="lame" id="lname"></td>
+                    </tr>
+                    
+                    <tr>
+                        <th><label for=""> Date of Birth</label></th>
+                        <td><input type="date" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th><label for=""> Age</label></th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th><label for=""> PAN Number</label></th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th><label for=""> AADHAR Number</label></th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Marital Status</label></th>
+                        <td>
+                            <input type="radio"  id="" value="Single" name="maritalstatus"><label for="" >Single</label>
+                            <input type="radio"  id="" value="married" name="maritalstatus"><label for="" >Married</label>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <th><label for="">Gender</label></th>
+                        <td>
+                            <input type="radio" name="gender" id="" value="Male"><label for="">Male</label>
+                            <input type="radio" name="gender" id="" value="Female"><label for="">Female</label>
+                            <input type="radio" name="gender" id="" value="Other"><label for="">Other</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Natinality</th>
+                        <td> <input type="search" list="list" placeholder="search 🔍" style="width:70%; margin-top:5px">
+                            <datalist id="list" >
+                                <option value="African"></option>
+                                <option value="American"></option>
+                                <option value="Australian"></option>
+                                <option value="Bangladeshi"></option>
+                                <option value="Brazilian"></option>
+                                <option value="Canadian"></option>
+                                <option value="Chinese"></option>
+                                <option value="French"></option>
+                                <option value="German"></option>
+                                <option value="Indian"></option>
+                                <option value="Italian"></option>
+                                <option value="Japanese"></option>
+                                <option value="Malaysian"></option>
+                                <option value="Pakistani"></option>
+                                <option value="Russian"></option>
+                                <option value=""><span onclick="cls()"  id="clseico" class="iconify" data-icon="icon-park:close"></span></option>
+                            </datalist></td>
+                    </tr>
+                    <tr>
+                        <th><label for="">Address</label></th>
+                        <td><textarea name="" id="" cols="24" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th  colspan="2" style="text-align: center;"><input type="submit" value="Save"></th>
+                    
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/register.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</body>
+</html>
+
+<!--<div class="row  align-items-center">
+                        <div class="col-auto">
+                          <label for="inputPassword6" class="col-form-label">Password</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                          <span id="passwordHelpInline" class="form-text">
+                            Must be 8-20 characters long.
+                          </span>
+                        </div>
+
+                      </div>
+                    
+                    <input type="text" class="search-box" placeholder="search country name">
+
+<form action="" id="registerhide">
+                    
+                    <div class="form-group">
+                        <label class="" for="fname">First Name</label>
+                        <input class="" id="fname" type="text">
+                        <div id="fnamehelp" class="form-text" ;></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="" for="lname">Last Name</label>
+                        <input class="" id="lname" type="text">
+                        <div id="lnamehelp" class="form-text" ;></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="" for="dob">Date of Birth</label>
+                        <input class="" id="dob" type="date">
+                        <div id="dobhelp" class="form-text" ;></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="" for="age">Age</label>
+                        <input class="" id="age" type="text">
+                        <div id="agehelp" class="form-text" ;></div>
+                    </div>
+                    <div class="form-group" id="marraige" >
+                        <div>
+                            <label for="">Marital Status</label>                            
+                         <div>
+                            <label for="single">Single</label>
+                            <input type="radio" id="single" name="maritalstatus" value="single">
+                        </div>
+                        <div>
+                            <label for="married">Married</label>
+                            <input type="radio" id="married" name="maritalstatus" value="married">
+                        </div>
+                        </div>
+                        
+                                
+                    </div>
+                </div>
+                </form>
+                    
+                    -->
